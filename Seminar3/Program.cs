@@ -6,6 +6,7 @@
 //Так мы распечатаем все числа от 1 до n включительно.
 //Переменную задаём 1 и каждый раз умножаем i на эту переменную
 //Не забываем её вернуть в конце метода
+
 int GetMult (int n)
 {
     int mult = 1;
@@ -19,6 +20,11 @@ int GetMult (int n)
 //Инициализируем ввод числа N
 Console.WriteLine("Введите число: ");
 int n = int.Parse(Console.ReadLine());
+if (n <= 0)
+{
+    Console.WriteLine(0);
+}
+return;
 
 //Распечатываем метод
 int result = GetMult(n);
