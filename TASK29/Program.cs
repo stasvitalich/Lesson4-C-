@@ -15,10 +15,12 @@ for(int i = 0; i < NewArray.Length; i = i + 1)
     NewArray[i] = int.Parse(Console.ReadLine());
 }
 
+//Вывод массива
 Console.WriteLine();
 Console.Write("Вывод массива: [");
 for (int i = 0; i < NewArray.Length; i = i + 1)
 {   
+        //Через конструкцию if else избавляемся от запятой после последнего i:
         if (i < 7)
         {
             Console.Write($"{NewArray[i]}, ");
